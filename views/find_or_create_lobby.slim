@@ -3,3 +3,14 @@
   h6.margin-x-xs Profile
   h6.margin-x-xs Settings
   h6.margin-x-xs Log Out
+
+.card.container--xs.margin-top-xl
+  .flex.flex-col.items-center
+    div.margin-md
+      h1 GO FISH
+    div.margin-md
+      form action='/lobby_list' method='GET'
+        button class="btn btn--primary" type="submit" Find A Game
+    div.margin-md
+      form action='/create_lobby' method='GET'
+        button class="btn btn--primary" type="submit" Create New Game
