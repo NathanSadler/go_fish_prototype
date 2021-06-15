@@ -1,0 +1,11 @@
+.full-card {
+  margin-right: var(--space-sm);
+  margin-left: var(--space-sm);
+  padding: var(--space-md) var(--space-sm);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+  border: 1px solid red;
+  color: var($color-red-700);
+  font-size: var(--text-lg);
+}

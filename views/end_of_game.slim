@@ -1,0 +1,21 @@
+.card.container--sm.margin-top-xl
+  h2.text-center You Win!
+  .flex.flex-column.justify-around
+    div.item-stretch
+      div
+        h3 1st: Player 3
+        h6 6 Books
+      div
+        h3 2nd: Player 1
+        h6 4 Books
+      div
+        h3 3rd: Player 2
+        h6 2 Books
+      div
+        h3 4th: Player 4
+        h6 1 Book
+    .flex.flex-col.justify-around
+      form action='/take_turn' method='GET'
+        button class="btn btn--primary" type="submit" Play New Game
+      form action='/' method='GET'
+        button class="btn btn--primary" type="submit" Back to Main Menu

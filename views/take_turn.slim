@@ -1,0 +1,36 @@
+h2 Your Turn
+h2 You are Player 3
+.flex.flex-row.items-start
+  div
+    h3 Player 1
+    h6 Books: None
+  div
+    h3 Player 2
+    h6 Books: 2, K
+  div
+    h3 Player 4
+    h6 Books: None
+
+.flex.flex-row.justify-around.items-start
+  .flex.flex-row.items-baseline
+    div.full-card 1
+    div.full-card 2
+    div.full-card 4
+    div.full-card 7
+    div.full-card D
+  form style="padding-right: var(--space-md);"
+    label for="player" Ask
+    select id="player" name="player"
+      option value="Player 1" Player 1
+      option value="Player 2" Player 2
+      option value="Player 4" Player 4
+    br
+    label for="rank" For a
+    select id="rank" name="rank"
+      option value="1" 1
+      option value="2" 2
+      option value="4" 4
+      option value="7" 7
+      option value="D" D
+    br
+    button type="submit" Play Turn
