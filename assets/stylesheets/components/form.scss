@@ -44,6 +44,21 @@ label {
   }
 }
 
+.form__number {
+  height: auto;
+  width: auto;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-black);
+  background-color: var(--neutral-layer-1-background);
+  border: var(--border-width) solid var(--neutral-layer-1-border);
+  font-weight: 300;
+  will-change: border-color, box-shadow;
+  border-radius: var(--radius);
+  box-shadow: none;
+}
+
 .form__dropdown {
   height: 2.7rem;
   padding: var(--space-sm) var(--space-md);
