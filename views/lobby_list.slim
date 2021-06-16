@@ -1,21 +1,26 @@
 h1 Lobby List
-form action='/find_or_create_lobby' method='GET'
-  button class="btn btn--primary" type="submit" Back
-  table.table
-    tr
-      th style="text-align:left;" Lobby Name
-      th style="text-align:left;" Current Players
-      th style="text-align:left;" Max Players
-    tr
-      td
-        a href="/end_of_game" Lobby
-      td 5
-      td 7
-    tr
-      td Lobby
-      td 2
-      td 7
-    tr
-      td Lobby
-      td 2
-      td 6
+.flex.flex-row.justify-end
+  form.margin-left-sm action='/find_or_create_lobby' method='GET'
+    button class="btn btn--primary" type="submit" Back
+  form.margin-left-sm action='/lobby_list' method='GET'
+    button class="btn btn--primary" type="submit" Refresh
+  form.margin-left-sm action='/filter' method='GET'
+    button class="btn btn--primary" type="submit" Filter
+table.table
+  tr
+    th style="text-align:left;" Lobby Name
+    th style="text-align:left;" Current Players
+    th style="text-align:left;" Max Players
+  tr
+    td
+      a href="/end_of_game" Lobby
+    td 5
+    td 7
+  tr
+    td Lobby
+    td 2
+    td 7
+  tr
+    td Lobby
+    td 2
+    td 6
