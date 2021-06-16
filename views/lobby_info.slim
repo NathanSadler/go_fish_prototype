@@ -1,0 +1,43 @@
+h1.text-center Lobby Name
+
+.flex.flex-column.justify-start
+  div.margin-right-md
+    p Current Players: 4
+    p Minimum Player Count: 2
+    p Maximum Player Count: 7
+    p Bots: Disabled
+    p Needs Password? No
+  div style="flex-grow:700"
+    table.table
+      tr
+        th style="text-align:left;" Player Name
+        th style="text-align:left;" Score Modifier
+      tr
+        td GreatestOfAllTime
+        td +1
+      tr
+        td Undefeatable
+        td +0
+      tr
+        td GoFishPro
+        td -1
+      tr
+        td GalaxyBrain29
+        td +2
+      tr
+        td
+        td
+      tr
+        td
+        td
+      tr
+        td
+        td
+
+.flex.flex-row.justify-center.margin-top-md
+  form.margin-x-sm action='/lobby_list' method='GET'
+    button class="btn btn--primary" type="submit" Back To List
+  form.margin-x-sm action='/take_turn' method='GET'
+    button class="btn btn--primary" type="submit" Join As Spectator
+  form.margin-x-sm action='/take_turn' method='GET'
+    button class="btn btn--primary" type="submit" Join As Player
