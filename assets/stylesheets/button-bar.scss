@@ -22,7 +22,8 @@
 }
 
 
-.button-bar form {
+.button-bar form, .button-bar-center form, .button-bar-start form,
+.button-bar-end form {
   margin-right: var(--space-sm);
   margin-left: var(--space-sm);
 }
