@@ -1,4 +1,4 @@
-.card-lg {
+.playing-card-lg {
   margin-right: var(--space-sm);
   margin-left: var(--space-sm);
   padding: var(--space-md) var(--space-sm);
@@ -9,27 +9,27 @@
   color: var($color-red-700);
 }
 
-.card-lg p {
+.playing-card-lg p {
   font-size: var(--text-lg);
 }
 
-.card-xl {
+.playing-card-xl {
   margin: var(--space-md);
   padding: var(--space-md);
   border: 1px solid red;
   color: var($color-red-700);
 }
 
-.card-xl span {
+.playing-card-xl span {
   font-size: var(--text-xxxl);
 }
 
-.card-sm {
+.playing-card-sm {
   margin: var(--space-sm);
   padding: var(--space-sm);
   border: 1px solid red;
 }
 
-.card-sm p {
+.playing-card-sm p {
   font-size: var(--text-sm);
 }

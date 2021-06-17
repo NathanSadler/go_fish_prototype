@@ -1,30 +1,29 @@
 h2 Your Turn
 h2 You are Player 3
 .flex.flex-col.items-start style="flex-wrap: wrap;"
-  .player-info
-    div
+  .card
       p.player-name Player 1
       span.book-list Books: None
-  .player-info
+  .card
     div
       h3 Player 2
       p.book-list Books: 2, K
-  .player-info
+  .card
     div
       h3 Player 4
       p.book-list Books: None
 
 .flex.flex-row.justify-around.items-start
   .flex.flex-row.items-baseline
-    .card-lg
+    .playing-card-lg
       p 1
-    .card-lg
+    .playing-card-lg
       p 2
-    .card-lg
+    .playing-card-lg
       p 4
-    .card-lg
+    .playing-card-lg
       p 7
-    .card-lg
+    .playing-card-lg
       p D
   form action="/turn_result" method='GET' style="padding-right: var(--space-md);"
     label for="player" Ask
