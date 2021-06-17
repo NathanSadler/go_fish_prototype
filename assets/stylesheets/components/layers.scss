@@ -1,23 +1,23 @@
 .layer-1 {
   background-color: var(--neutral-layer-1-background);
   color: var(--neutral-layer-1-text);
-  border: 1px solid var(--neutral-layer-1-border);
+  border: var(--text-xs) solid var(--neutral-layer-1-border);
 }
 
 .layer-2 {
   background-color: var(--neutral-layer-2-background);
   color: var(--neutral-layer-2-text);
-  border: 1px solid var(--neutral-layer-2-border);
+  border: var(--text-xs) solid var(--neutral-layer-2-border);
 }
 
 .layer-3 {
   background-color: var(--neutral-layer-3-background);
   color: var(--neutral-layer-3-text);
-  border: 1px solid var(--neutral-layer-3-border);
+  border: var(--text-xs) solid var(--neutral-layer-3-border);
 }
 
 .layer-4 {
   background-color: var(--neutral-layer-4-background);
   color: var(--neutral-layer-4-text);
-  border: 1px solid var(--neutral-layer-4-border);
+  border: var(--text-xs) solid var(--neutral-layer-4-border);
 }

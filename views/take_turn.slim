@@ -9,46 +9,49 @@ h2 You are Player 3
       label for="player1"
         .player-info
             p.player-name Player 1
-            p.card-count 12
+            p.card-count 12 Cards
             span.book-list Books: None
       input.btn--hidden type="radio" id="player2" name="player" value="player2"
       label for="player2"
         .player-info
           p.player-name Player 2
-          p.card-count 7
+          p.card-count 7 Cards
           span.book-list Books: 2, K
       input.btn--hidden type="radio" id="player3" name="player" value="player3"
       label for="player3"
         .player-info
           p.player-name Player 4
-          p.card-count 17
+          p.card-count 17 Cards
           span.book-list Books: None
+    .flex.flex-row style="flex-wrap:wrap;"
+      input.btn--hidden type="radio" id="1D" name="card" value="1D"
+      label for="1D"
+        .playing-card-lg
+          p 1
 
-.flex.flex-row.justify-around.items-start
-  .flex.flex-row.items-baseline
-    .playing-card-lg
-      p 1
-    .playing-card-lg
-      p 2
-    .playing-card-lg
-      p 4
-    .playing-card-lg
-      p 7
-    .playing-card-lg
-      p D
-  form action="/turn_result" method='GET' style="padding-right: var(--space-md);"
-    label for="player" Ask
-    select.form__dropdown id="player" name="player"
-      option value="Player 1" Player 1
-      option value="Player 2" Player 2
-      option value="Player 4" Player 4
-    br
-    label for="rank" For a
-    select.form__dropdown id="rank" name="rank"
-      option value="1" 1
-      option value="2" 2
-      option value="4" 4
-      option value="7" 7
-      option value="D" D
-    br
+      input.btn--hidden type="radio" id="1H" name="card" value="1H"
+      label for="1H"
+        .playing-card-lg
+          p 1
+
+      input.btn--hidden type="radio" id="2C" name="card" value="2C"
+      label for="2C"
+        .playing-card-lg
+          p 2
+
+      input.btn--hidden type="radio" id="4C" name="card" value="4C"
+      label for="4C"
+        .playing-card-lg
+          p 4
+
+      input.btn--hidden type="radio" id="7" name="card" value="7"
+      label for="7"
+        .playing-card-lg
+          p 7
+
+      input.btn--hidden type="radio" id="D" name="card" value="D"
+      label for="D"
+        .playing-card-lg
+          p D
+
     button.btn.btn--primary Play Turn
