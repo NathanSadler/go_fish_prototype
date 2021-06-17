@@ -1,4 +1,4 @@
-.full-card {
+.card-lg {
   margin-right: var(--space-sm);
   margin-left: var(--space-sm);
   padding: var(--space-md) var(--space-sm);
@@ -7,6 +7,9 @@
   flex-wrap: wrap;
   border: 1px solid red;
   color: var($color-red-700);
+}
+
+.full-card p {
   font-size: var(--text-lg);
 }
 
@@ -19,4 +22,14 @@
 
 .card-xl span {
   font-size: var(--text-xxxl);
+}
+
+.card-sm {
+  margin: var(--space-sm);
+  padding: var(--space-sm);
+  border: 1px solid red;
+}
+
+.card-sm p {
+  font-size: var(--text-sm);
 }

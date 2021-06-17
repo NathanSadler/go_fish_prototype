@@ -1,0 +1,20 @@
+.player-name {
+  font-size: var(--text-md);
+}
+
+.book-list {
+  font-size: var(--text-xs);
+}
+
+.player-info {
+  display: flex;
+  flex-direction: row;
+  margin: var(--space-sm);
+}
+
+.hidden-cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm)
+}
