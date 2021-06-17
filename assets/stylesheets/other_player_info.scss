@@ -9,12 +9,14 @@
 .player-info {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   margin: var(--space-sm);
 }
 
 .hidden-cards {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-left: var(--space-sm);
-  margin-right: var(--space-sm)
+  margin-right: var(--space-sm);
 }
