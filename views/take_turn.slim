@@ -1,26 +1,28 @@
+
 h2 Your Turn
 h2 You are Player 3
 
 .layer-1 style="padding: var(--space-md);"
   form action="/turn_result" method="GET"
-    input.btn--hidden type="radio" id="player1" name="player" value="player1"
-    label for="player1"
-      .player-info
-          p.player-name Player 1
-          p.card-count 12
+    .flex.flex-row style="flex-wrap:wrap;"
+      input.btn--hidden type="radio" id="player1" name="player" value="player1"
+      label for="player1"
+        .player-info
+            p.player-name Player 1
+            p.card-count 12
+            span.book-list Books: None
+      input.btn--hidden type="radio" id="player2" name="player" value="player2"
+      label for="player2"
+        .player-info
+          p.player-name Player 2
+          p.card-count 7
+          span.book-list Books: 2, K
+      input.btn--hidden type="radio" id="player3" name="player" value="player3"
+      label for="player3"
+        .player-info
+          p.player-name Player 4
+          p.card-count 17
           span.book-list Books: None
-    input.btn--hidden type="radio" id="player2" name="player" value="player2"
-    label for="player2"
-      .player-info
-        p.player-name Player 2
-        p.card-count 7
-        span.book-list Books: 2, K
-    input.btn--hidden type="radio" id="player3" name="player" value="player3"
-    label for="player3"
-      .player-info
-        p.player-name Player 4
-        p.card-count 17
-        span.book-list Books: None
 
 .flex.flex-row.justify-around.items-start
   .flex.flex-row.items-baseline
