@@ -95,3 +95,13 @@ button {
     color: var(--color-primary-text);
   }
 }
+
+// For when the default button gets replaced with something else, like an image
+.btn--hidden {
+  opacity: 0;
+  position: absolute;
+}
+
+.btn--hidden:focus + label {
+  outline: solid 3px var(--color-secondary-light);
+}

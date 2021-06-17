@@ -1,17 +1,22 @@
 h2 Your Turn
 h2 You are Player 3
-.flex.flex-col.items-start style="flex-wrap: wrap;"
+.flex.flex-row.items-start style="flex-wrap: wrap; column-gap: var(--space-sm);"
   .card
       p.player-name Player 1
       span.book-list Books: None
   .card
-    div
-      h3 Player 2
-      p.book-list Books: 2, K
+      p.player-name Player 2
+      span.book-list Books: 2, K
   .card
-    div
-      h3 Player 4
-      p.book-list Books: None
+      p.player-name Player 4
+      span.book-list Books: None
+
+form action="/turn_result" method="GET"
+  input.form__radio.btn--hidden type="radio" id="player1" name="player1" value="player1"
+  label for="player1"
+    .card
+        p.player-name Player 1
+        span.book-list Books: None
 
 .flex.flex-row.justify-around.items-start
   .flex.flex-row.items-baseline
