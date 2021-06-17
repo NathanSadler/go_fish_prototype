@@ -1,4 +1,8 @@
 .light-gray-rounded {
   border: var(--border-width) solid var(--neutral-layer-1-border);
   border-radius: var(--radius);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
 }

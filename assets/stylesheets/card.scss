@@ -9,3 +9,14 @@
   color: var($color-red-700);
   font-size: var(--text-lg);
 }
+
+.card-xl {
+  margin: var(--space-md);
+  padding: var(--space-md);
+  border: 1px solid red;
+  color: var($color-red-700);
+}
+
+.card-xl span {
+  font-size: var(--text-xxxl);
+}

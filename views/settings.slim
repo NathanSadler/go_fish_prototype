@@ -6,7 +6,26 @@
 
 h1.page-heading Settings
 
-.flex.flex-row
-  form action='/update_email_address' method='GET'
-    button.btn.btn--primary type="submit" Change Email Address
-  div.light-gray-rounded
+.flex.flex-col
+  div
+    form action='/update_email_address' method='GET'
+      button.btn.btn--primary type="submit" Change Email Address
+  .light-gray-rounded
+    p Change Your Password
+    form action='/settings' method="GET"
+      .form__group.margin-x-sm
+        label.form__label for="current_password" Current Password
+        input.form__input type="password" name="current_password"
+      .form__group.margin-x-sm
+        label.form__label for="new_password" New Password
+        input.form__input type="password" name="new_password"
+      .form__group.margin-x-sm
+        label.form__label for="confirm_new_password" Confirm New Password
+        input.form__input type="password" name="confirm_new_password"
+  .flex.flex-row.justify-between
+    div
+      h3 Profile Picture
+    div
+      h3 Card Back
+    div
+      h3 Card Face
