@@ -2,15 +2,19 @@
   font-size: var(--text-md);
 }
 
+.card-count {
+  font-size: var(--text-xs)
+}
+
 .book-list {
   font-size: var(--text-xs);
 }
 
 .player-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: var(--space-sm);
+  padding: var(--space-sm);
+  background-color: var(--neutral-layer-2-background);
+  color: var(--neutral-layer-2-text);
+  border: var(--space-sm) solid var(--neutral-layer-2-border);
 }
 
 .hidden-cards {

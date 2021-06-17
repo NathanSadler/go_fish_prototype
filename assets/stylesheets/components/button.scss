@@ -102,6 +102,10 @@ button {
   position: absolute;
 }
 
-.btn--hidden:focus + label {
-  outline: solid 3px var(--color-secondary-light);
+.btn--hidden:focus + label, .btn--hidden:hover + label {
+  outline: solid 3px var(--color-secondary-lighter);
+}
+
+.btn--hidden:checked + label {
+  outline: solid 3px var(--color-secondary);
 }
