@@ -1,12 +1,8 @@
 .card.container--xs.margin-top-xl
-  h1 Welcome to GoFish
+  h1 Welcome to Go Fish
 
-  h3 Login
-
-  form action='/take_turn' method='POST'
-    .form__group
-      label.form__label Name
-      input.form__input type='text' placeholder='Your name...' name='name'
-
-    .form__group
-      button class="btn btn--primary" type='submit' Join Game
+  .flex.flex-col.items-center style="gap:var(--space-md);"
+    form action='/sign_up' method="GET"
+      button.btn.btn--primary type="submit" Sign Up
+    form action='/sign_in' method="GET"
+      button.btn.btn--primary type="submit" Sign In
