@@ -307,3 +307,71 @@
 .margin-left-none {
   margin-left: 0;
 }
+
+//Border Colors
+.border-color-1 {
+  border-color: var(--neutral-layer-1-border);
+}
+.border-color-2 {
+  border-color: var(--neutral-layer-2-border);
+}
+
+//Border Widths
+.border-xxs {
+  border-width: var(--space-xxs);
+}
+
+.border-xs {
+  border-width: var(--space-xs);
+}
+
+.border-sm {
+  border-width: var(--space-sm);
+}
+
+.border-md {
+  border-width: var(--space-md);
+}
+
+.border-lg {
+  border-width: var(--space-lg);
+}
+
+.border-xl {
+  border-width: var(--space-xl);
+}
+
+//Border Styles
+.border-dotted {
+  border-style: dotted;
+}
+
+.border-double {
+  border-style: double;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+//background colors
+.background-color-1 {
+  background-color: var(--neutral-layer-1-background);
+}
+
+.background-color-2 {
+  background-color: var(--neutral-layer-2-border);
+}
+
+//wrapping
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.wrap-none {
+  flex-wrap: wrap-none;
+}
