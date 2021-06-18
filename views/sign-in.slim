@@ -1,0 +1,13 @@
+.card.margin-top-sm
+  h1.text-center Sign In
+  .flex.flex-col
+    form action='/lobby_list' method="GET"
+      .form__group
+        label.form__label for="username" Username
+        input.form__input type="text" id="username" name="username"
+      .form__group
+        label.form__label for="password" Password
+        input.form__input type="password" id="password" name="password"
+      .form__group
+        a.btn.btn--primary.margin-right-sm href="/" Cancel
+        button.btn.btn--primary type="submit" Sign In
