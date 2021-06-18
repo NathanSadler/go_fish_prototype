@@ -109,3 +109,11 @@ button {
 .btn--hidden:checked + label {
   outline: solid 3px var(--color-secondary);
 }
+
+button[disabled] {
+  background: var(--color-primary-lighter);
+  &:hover {
+    background: var(--color-primary-lighter);
+    cursor: not-allowed;
+  }
+}

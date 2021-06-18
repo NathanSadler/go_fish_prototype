@@ -22,14 +22,31 @@ h1.page-heading Settings
       .form__group.margin-x-sm
         label.form__label for="confirm_new_password" Confirm New Password
         input.form__input type="password" name="confirm_new_password"
+      .form__group.margin-x-sm
+        button.btn.btn--primary type="submit" Change Password
   form action="/settings" method="GET"
-    .flex.flex-column.justify-between
-      .light-gray-rounded
+    .flex.flex-row.justify-between style="flex-wrap:wrap;"
+      .light-gray-rounded.flex.flex-col
         h3 Profile Picture
-        img style="width:30vw" src="default_pfp.png"
-      div
+        a href="https://commons.wikimedia.org/wiki/File:Portrait_Placeholder.png"
+          img style="width:20vw" src="default_pfp.png" title="Portrait_Placeholder by Greaseman, used under CC BY-SA 4.0"
+        input type="file"  id="profile_picture" name="profile_picture"
+      .light-gray-rounded.flex.flex-col
         h3 Card Back
-      div
+        a href="https://commons.wikimedia.org/wiki/File:English_pattern_playing_cards_deck_PLUS.svg"
+          img style="width:20vw;" src="playing_card_back.png" title="'English pattern playing cards deck PLUS.svg' by Guy vandegrift, used under CC0 1.0"
+        select.form__dropdown name="card_back" id="card_back"
+          option value="default" Default
+          option value="motorcycle" Motorcycle
+          option value="transparent" Transparent
+      .light-gray-rounded.flex.flex-col
         h3 Card Face
+        a href="https://commons.wikimedia.org/wiki/File:English_pattern_playing_cards_deck_PLUS.svg"
+          img style="width:20vw;" src="ace_of_spades.png" title="'English pattern playing cards deck PLUS.svg' by Guy vandegrift, used under CC0 1.0"
+        select.form__dropdown name="card_face" id="card_face"
+          option value="Default" Default
+          option value="number_in_suit" Number In Suit
+          option value="invisible_ink" Invisible Ink
+          option value="no_suit" No Suit
     .flex.flex-row.justify-center
       button.btn.btn--primary type="submit" Apply Changes

@@ -1,0 +1,25 @@
+.card.margin-top-sm
+  .flex.flex-row.justify-center
+    h1 Player 1's Turn
+  .flex.flex-row.justify-around style="gap: var(--space-sm);"
+    .flex.flex-col.margin-top-sm style="gap: var(--space-sm);max-width:30vw;"
+      .layer-1
+        p.player-name Player 1
+        p.card-count 12 Cards
+        span.book-list Books: None
+      .layer-1
+        p.player-name Player 2
+        p.card-count 7 Cards
+        span.book-list Books: 2, K
+      .layer-1
+        p.player-name Player 4
+        p.card-count 17 Cards
+        span.book-list Books: None
+    .flex.flex-col.margin-top-sm.layer-1 style="gap: var(--space-sm)"
+      p Player 4 asked Player 1 for a 3
+      p Go Fish!
+      p Player 4 drew a card from the middle
+      p It is now Player 1's turn
+  .flex.flex-row.justify-center.margin-top-sm
+    form action='/end_of_game' method='GET'
+      button.btn.btn--primary disabled="true" type="submit" Wait Your Turn...

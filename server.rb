@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sprockets'
 require 'sass'
+require 'slim/include'
 
 class Server < Sinatra::Base
   configure :development do
