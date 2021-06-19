@@ -1,1 +1,9 @@
 include _header
+.card
+  h1.text-center Create Lobby
+  form action="/lobby_info" method="GET"
+  .flex.flex-col
+    include _lobby_form_elements
+  .flex.flex-row.gap-sm
+    a.btn.btn--primary href="/find_or_create_lobby" Cancel
+    button.btn.btn--primary type="submit" Create Lobby
