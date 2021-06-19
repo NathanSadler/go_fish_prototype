@@ -1,8 +1,9 @@
 include _header
-h1.page-heading Create Search Filter
-form action='/lobby_list' method="GET"
-  .flex.flex-col
-    include _lobby_form_elements
-  .flex.flex-row.gap-sm
-    a.btn.btn--primary href='/lobby_list' Cancel
-    button.btn.btn--primary type="submit" Apply
+.card
+  h1.page-heading Create Search Filter
+  form action='/lobby_list' method="GET"
+    .flex.flex-col
+      include _lobby_form_elements
+    .flex.flex-row.gap-sm
+      a.btn.btn--primary href='/lobby_list' Cancel
+      button.btn.btn--primary type="submit" Apply
