@@ -1,27 +1,28 @@
 include _header
-h1.page-heading Handicap Settings
+.card
+  h1.page-heading Handicap Settings
 
-table.table
-  tr
-    th Player
-    th Score Modifier
-  tr
-    td Player Name
-    td - 0 +
-  tr
-    td Player Name
-    td - 0 +
-  tr
-    td Player Name
-    td - -1 +
-  tr
-    td Player Name
-    td - +2 +
+  table.table
+    tr
+      th Player
+      th Score Modifier
+    tr
+      td Player Name
+      td - 0 +
+    tr
+      td Player Name
+      td - 0 +
+    tr
+      td Player Name
+      td - -1 +
+    tr
+      td Player Name
+      td - +2 +
 
-.button-bar-center.margin-top-sm
-  form.margin-left-sm action='/lobby_info' method='GET'
-    button.btn.btn--primary type="submit" Go Back
-  form.margin-left-sm action='/lobby_info' method="GET"
-    button.btn.btn--primary type="submit" Apply Changes
-  form.margin-left-sm action='/handicap_settings' type="submit"
-    button.btn.btn--primary type="submit" Reset
+  .button-bar-center.margin-top-sm
+    form.margin-left-sm action='/waiting-room' method='GET'
+      button.btn.btn--primary type="submit" Go Back
+    form.margin-left-sm action='/waiting-room' method="GET"
+      button.btn.btn--primary type="submit" Apply Changes
+    form.margin-left-sm action='/waiting-room' type="submit"
+      button.btn.btn--primary type="submit" Reset
