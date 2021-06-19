@@ -400,3 +400,13 @@
 .gap-xl {
   gap: var(--space-xl);
 }
+
+// A flexbox that is a row on computers and a column on mobile
+.column-on-mobile {
+  flex-direction: row;
+}
+@media screen and (max-width: 670px) {
+  .column-on-mobile{
+    flex-direction: column;
+  }
+}
