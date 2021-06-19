@@ -1,0 +1,38 @@
+.flex.flex-col
+  div
+    .form__group
+      label.form__label for="lobby_name" Lobby Name
+      input.form__input type="text" name="lobby_name"
+  div
+    .form__group
+      label.form__label Requires Password?
+      input.form__radio type="radio" name="requires_password" id="no" value="no"
+      label.form__label for="no" No
+      input.form__radio type="radio" name="requires_password" id="yes" value="yes"
+      label.form__label for="yes" Yes
+  div
+    .form__group
+      label.form__label for="password" Password
+      input.form__input type="password" name="password"
+  div
+    .form__group
+      label.form__label Cards Per Book
+      input.form__radio type="radio" name="cards_per_book" id="2" value="2"
+      label.form__label for="2" 2
+      input.form__radio type="radio" name="cards_per_book" id="4" value="4"
+      label.form__label for="4" 4
+  div
+    .form__group
+      label.form__label for="min_player_count" Minimum Player Count
+      input.form__number type="number" name="min_player_count" min="2" max="7"
+  div
+    .form__group
+      label.form__label for="max_player_count" Maximum Player Count
+      input.form__number type="number" name="max_player_count" min="2" max="7"
+  div
+    .form__group
+      label.form__label Bots Enabled?
+      input.form__radio type="radio" name="bots_enabled" id="yes" value="yes"
+      label.form__label for="yes" Yes
+      input.form__radio type="radio" name="bots_enabled" id="no" value="no"
+      label.form__label for="no" No
