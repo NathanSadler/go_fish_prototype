@@ -18,7 +18,7 @@ table.table {
     font-size: var(--text-sm);
     font-weight: 400;
 
-    
+
 
     &:first-child {
       border-top-left-radius: var(--radius);
@@ -42,6 +42,10 @@ table.table {
     &:hover {
       background-color: var(--neutral-layer-3-background);
     }
+  }
+
+  tr:first-child:hover {
+    background: inherit;
   }
 
 }
