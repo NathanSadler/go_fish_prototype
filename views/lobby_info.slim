@@ -9,31 +9,7 @@ h1.page-heading Lobby Name
     p Bots: Disabled
     p Needs Password? No
   div style="flex-grow:700"
-    table.table
-      tr
-        th style="text-align:left;" Player Name
-        th style="text-align:left;" Score Modifier
-      tr
-        td GreatestOfAllTime
-        td +1
-      tr
-        td Undefeatable
-        td +0
-      tr
-        td GoFishPro
-        td -1
-      tr
-        td GalaxyBrain29
-        td +2
-      tr
-        td
-        td
-      tr
-        td
-        td
-      tr
-        td
-        td
+    include _users-table
 
 .button-bar-center.margin-top-md
   form action='/lobby_list' method='GET'
