@@ -1,2 +1,9 @@
 include _header
 .card
+  h1.text-center Lobby Name
+  .flex.flex-col
+    include _users-table
+    form action="/take_turn" method="GET"
+      .flex.flex-row.gap-sm.margin-top-sm
+        a.btn.btn--primary href="/lobby_info" Cancel
+        button.btn.btn--primary type="submit" Start Game
