@@ -1,8 +1,9 @@
 include _header
-h1.page-heading.margin-bottom-md Update Email
+.card
+  h1.page-heading.margin-bottom-md Update Email
 
-.flex.justify-center
-  form action='/settings' method='GET'
-    label.form__label for="email" New Email Address
-    input.form__input type="text" id="email" name="email"
-    button.btn.btn--primary.margin-top-sm.full-width type="submit" Update Email
+  .flex.flex-col
+    form action='/settings' method='GET'
+      label.form__label for="email" New Email Address
+      input.form__input type="text" id="email" name="email"
+      button.btn.btn--primary.margin-top-sm type="submit" Update Email
